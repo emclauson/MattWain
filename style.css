@@ -17,13 +17,9 @@ body {
 .site-header {
   background-color: #fff;
   border-bottom: 1px solid #ddd;
-  padding: 20px 40px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+  padding: 20px 0; /* vertical padding only now */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
 }
-
 /* Logo Section */
 .logo-container {
   display: flex;
@@ -101,11 +97,8 @@ body {
 .site-header {
   background-color: #fff;
   border-bottom: 1px solid #ddd;
-  padding: 20px 40px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+  padding: 20px 0; /* vertical padding only now */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
 }
 
 .logo {
@@ -115,7 +108,7 @@ body {
 }
 
 /* Optional nav link styles */
-/*
+
 .site-header nav a {
   margin-left: 20px;
   text-decoration: none;
@@ -125,11 +118,11 @@ body {
 .site-header nav a:hover {
   text-decoration: underline;
 }
-*/
+
 
 /* Main content container */
 .container {
-  max-width: 600px;
+  max-width: 80%;
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 10px;
@@ -166,4 +159,15 @@ body {
 .btn:hover {
   background-color: #111;
   color: #fff;
+}
+
+/* Shared wrapper for consistent horizontal alignment */
+.content-wrapper {
+  max-width: 80%; /* match your .container width */
+  margin: 0 auto;
+  padding: 0 20px; /* optional horizontal breathing room */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* allows logo and nav to stack on small screens */
 }
